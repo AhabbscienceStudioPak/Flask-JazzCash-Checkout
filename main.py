@@ -67,7 +67,7 @@ def checkout():
     return render_template('index.html', product_name=product_name, product_price=product_price, post_data=post_data)
 
 
-@app.route('/success', methods=['GET', 'POST'])
+@app.route('/success', methods=['POST'])
 def success():    
     return render_template('success.html')
 
