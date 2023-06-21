@@ -9,6 +9,7 @@ app = Flask(__name__)
 JAZZCASH_MERCHANT_ID = "<JAZZCASH_MERCHANT_ID>"
 JAZZCASH_PASSWORD = "<JAZZCASH_PASSWORD>"
 JAZZCASH_RETURN_URL = "<JAZZCASH_RETURN_URL>"
+JAZZCASH_INTEGRITY_SALT = "<JAZZCASH_INTEGRITY_SALT>"
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/checkout')
@@ -59,7 +60,7 @@ def checkout():
     # Calculate the secure hash
     sorted_string = '&'.join(f"{key}={value}" for key, value in sorted(post_data.items()) if value != "")
     pp_SecureHash = hmac.new(
-    "325e445w1w".encode(),
+    JAZZCASH_INTEGRITY_SALT.encode(),
     sorted_string.encode(),
     hashlib.sha256
 ).hexdigest()
