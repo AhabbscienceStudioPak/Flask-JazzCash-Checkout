@@ -11,7 +11,7 @@ Before running the application, make sure you have the following:
 - JazzCash merchant credentials (Merchant ID, Password, Return URL)
 
 ## Configuration
-Open the app.py file and update the following configuration variables:
+Open the main.py file and update the following configuration variables:
 
 ```python
 JAZZCASH_MERCHANT_ID = "<JAZZCASH_MERCHANT_ID>"
