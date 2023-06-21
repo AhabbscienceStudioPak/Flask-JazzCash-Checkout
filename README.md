@@ -9,3 +9,13 @@ Before running the application, make sure you have the following:
 - Python (3.7 or higher) installed
 - Flask framework installed
 - JazzCash merchant credentials (Merchant ID, Password, Return URL)
+
+## Configuration
+Open the app.py file and update the following configuration variables:
+
+```python
+JAZZCASH_MERCHANT_ID = "<JAZZCASH_MERCHANT_ID>"
+JAZZCASH_PASSWORD = "<JAZZCASH_PASSWORD>"
+JAZZCASH_RETURN_URL = "<JAZZCASH_RETURN_URL>"
+```
+Replace <JAZZCASH_MERCHANT_ID>, <JAZZCASH_PASSWORD>, and <JAZZCASH_RETURN_URL> with your actual JazzCash merchant credentials and desired return URL.
