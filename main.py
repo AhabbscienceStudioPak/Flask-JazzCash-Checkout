@@ -15,7 +15,6 @@ JAZZCASH_INTEGRITY_SALT = "<JAZZCASH_INTEGRITY_SALT>"
 @app.route('/checkout')
 def checkout():
     product_id = request.args.get('product_id')
-    # Add database logic here to retrieve product details based on the product_id
 
     product_name = "Product Name"
     product_price = 100
