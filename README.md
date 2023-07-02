@@ -6,7 +6,7 @@ This repository contains a Flask application that demonstrates the integration o
 
 Before running the application, make sure you have the following:
 
-- Python (3.7 or higher) installed
+- Python installed
 - Flask framework installed
 - JazzCash merchant credentials (Merchant ID, Password, Return URL)
 
