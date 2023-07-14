@@ -8,7 +8,7 @@ Before running the application, make sure you have the following:
 
 - Python installed
 - Flask framework installed
-- JazzCash merchant credentials (Merchant ID, Password, Return URL)
+- JazzCash merchant credentials (Merchant ID, Password, Integrity salt)
 
 ## Configuration
 Open the main.py file and update the following configuration variables:
